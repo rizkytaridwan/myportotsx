@@ -34,7 +34,7 @@ const translations = {
     // About Section
     "about.title": "About Me",
     "about.subtitle":
-      "Dedicated data entry professional with over 5 years of experience in transforming complex data into organized, actionable information.",
+      "Dedicated data entry professional with over 3 years of experience in transforming complex data into organized, actionable information.",
     "about.name": "Rizky Taufiq Aditya Ridwan",
     "about.role": "Data Entry Specialist",
     "about.description1":
@@ -246,7 +246,7 @@ const translations = {
     // About Section
     "about.title": "Tentang Saya",
     "about.subtitle":
-      "Profesional data entry berdedikasi dengan pengalaman lebih dari 5 tahun dalam mengubah data kompleks menjadi informasi yang terorganisir dan dapat ditindaklanjuti.",
+      "Profesional data entry berdedikasi dengan pengalaman lebih dari 3 tahun dalam mengubah data kompleks menjadi informasi yang terorganisir dan dapat ditindaklanjuti.",
     "about.name": "Rizky Taufiq Aditya Ridwan",
     "about.role": "Spesialis Data Entry",
     "about.description1":
