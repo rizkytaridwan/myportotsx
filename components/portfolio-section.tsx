@@ -24,7 +24,7 @@ export function PortfolioSection() {
           setIsVisible(true)
         }
       },
-      { threshold: 0.2 },
+      { threshold: 0.1 },
     )
 
     if (sectionRef.current) {
@@ -73,7 +73,7 @@ export function PortfolioSection() {
       client: t("portfolio.project4.client"),
       results: t("portfolio.project4.results"),
       tags: ["CRM", "Data Migration", "Database"],
-      image: "/placeholder-9kxsk.png",
+      image: "/gudang.png",
     },
     {
       title: t("portfolio.project5.title"),
@@ -141,7 +141,7 @@ export function PortfolioSection() {
           </div>
 
           {/* Projects Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {filteredProjects.map((project, index) => (
               <Card
                 key={index}
@@ -154,7 +154,7 @@ export function PortfolioSection() {
                   <img
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
-                    className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-40 sm:h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   <div className="absolute top-4 right-4">
@@ -211,7 +211,7 @@ export function PortfolioSection() {
 
           {/* Stats Section */}
           <div className={`mt-16 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`} style={{ animationDelay: "1s" }}>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center">
               <div className="space-y-2">
                 <div className="text-4xl font-bold text-primary">1000+</div>
                 <div className="text-muted-foreground">{t("portfolio.stats.projects")}</div>

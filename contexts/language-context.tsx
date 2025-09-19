@@ -145,15 +145,15 @@ const translations = {
     "portfolio.project2.results": "100% compliance, 60% reduction in retrieval time",
     "portfolio.project3.title": "Financial Data Analysis",
     "portfolio.project3.desc":
-      "Processed and analyzed 2 years of financial transactions, creating comprehensive reports and identifying cost-saving opportunities.",
+      "Performing reconciliation and analysis of price data from two internal systems, thereby efficiently identifying inconsistencies as a basis for cost adjustments.",
     "portfolio.project3.duration": "4 weeks",
     "portfolio.project3.client": "FinanceFlow Corp",
     "portfolio.project3.results": "$50K cost savings identified, automated reporting",
-    "portfolio.project4.title": "Customer Database Migration",
+    "portfolio.project4.title": "Goods Database Migration",
     "portfolio.project4.desc":
-      "Migrated 25,000+ customer records from legacy system to modern CRM, ensuring data integrity and zero downtime.",
+      "Executing the migration of 1,000+ products to the new Warehouse System seamlessly without disrupting operations.",
     "portfolio.project4.duration": "5 weeks",
-    "portfolio.project4.client": "ServicePro Inc",
+    "portfolio.project4.client": "Villa Parfum",
     "portfolio.project4.results": "Zero data loss, 50% improved query performance",
     "portfolio.project5.title": "Market Research Compilation",
     "portfolio.project5.desc":
@@ -165,7 +165,7 @@ const translations = {
     "portfolio.project6.desc":
       "Digitized warehouse inventory records and implemented automated tracking system for 15,000+ SKUs.",
     "portfolio.project6.duration": "4 weeks",
-    "portfolio.project6.client": "LogiFlow Warehouse",
+    "portfolio.project6.client": "Villa Parfum",
     "portfolio.project6.results": "30% reduction in stock discrepancies, real-time tracking",
     "portfolio.viewDetails": "View Details",
     "portfolio.stats.projects": "Projects Completed",
@@ -359,15 +359,15 @@ const translations = {
     "portfolio.project2.results": "100% kepatuhan, pengurangan waktu pengambilan 60%",
     "portfolio.project3.title": "Analisis Data Keuangan",
     "portfolio.project3.desc":
-      "Memproses dan menganalisis 2 tahun transaksi keuangan, membuat laporan komprehensif dan mengidentifikasi peluang penghematan biaya.",
+      "Melakukan rekonsiliasi dan analisis data harga dari dua sistem internal, sehingga berhasil menemukan inkonsistensi secara efisien untuk dasar penyesuaian biaya.",
     "portfolio.project3.duration": "4 minggu",
     "portfolio.project3.client": "FinanceFlow Corp",
     "portfolio.project3.results": "Penghematan biaya $50K teridentifikasi, pelaporan otomatis",
-    "portfolio.project4.title": "Migrasi Database Pelanggan",
+    "portfolio.project4.title": "Migrasi Database Barang",
     "portfolio.project4.desc":
-      "Migrasi 25.000+ catatan pelanggan dari sistem lama ke CRM modern, memastikan integritas data dan zero downtime.",
+      "Mengeksekusi migrasi database 1.000+ produk ke Sistem Gudang yang baru secara mulus tanpa mengganggu operasional.",
     "portfolio.project4.duration": "5 minggu",
-    "portfolio.project4.client": "ServicePro Inc",
+    "portfolio.project4.client": "Villa Parfum",
     "portfolio.project4.results": "Zero kehilangan data, peningkatan performa query 50%",
     "portfolio.project5.title": "Kompilasi Riset Pasar",
     "portfolio.project5.desc":
@@ -379,7 +379,7 @@ const translations = {
     "portfolio.project6.desc":
       "Mendigitalkan catatan inventori gudang dan mengimplementasikan sistem pelacakan otomatis untuk 15.000+ SKU.",
     "portfolio.project6.duration": "4 minggu",
-    "portfolio.project6.client": "LogiFlow Warehouse",
+    "portfolio.project6.client": "Villa Parfum",
     "portfolio.project6.results": "Pengurangan ketidaksesuaian stok 30%, pelacakan real-time",
     "portfolio.viewDetails": "Lihat Detail",
     "portfolio.stats.projects": "Proyek Selesai",
