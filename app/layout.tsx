@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   description:
     "Professional data entry specialist with expertise in data processing, database management, and digital transformation.",
   generator: "v0.app",
+  icons: {
+    icon: '/iconmantap.png', // <-- Ganti ke nama file SVG Anda, misalnya 'favicon.svg'
+  },
 }
 
 export default function RootLayout({
