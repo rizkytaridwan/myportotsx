@@ -13,10 +13,12 @@ export function PortfolioSection() {
   const sectionRef = useRef<HTMLElement>(null)
   const { t } = useLanguage()
 
+  // Inisialisasi filter "All" saat bahasa berubah
   useEffect(() => {
     setActiveFilter(t("portfolio.filter.all"))
   }, [t])
 
+  // Efek untuk animasi saat scroll
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -34,6 +36,7 @@ export function PortfolioSection() {
     return () => observer.disconnect()
   }, [])
 
+  // Daftar Proyek
   const projects = [
     {
       title: t("portfolio.project1.title"),
@@ -47,23 +50,24 @@ export function PortfolioSection() {
     },
     {
       title: t("portfolio.project2.title"),
-      category: t("portfolio.filter.document"),
+      category: t("portfolio.filter.database"),
       description: t("portfolio.project2.desc"),
       duration: t("portfolio.project2.duration"),
       client: t("portfolio.project2.client"),
       results: t("portfolio.project2.results"),
-      tags: ["HIPAA", "Document Scanning", "Healthcare"],
-      image: "/placeholder-jvt8u.png",
+      tags: ["Web Development", "Order Management", "React", "HTML", "CSS"],
+      image: "/sistemgudang.png",
+      link: "https://gudangvillaparfum.my.id/",
     },
     {
       title: t("portfolio.project3.title"),
-      category: t("portfolio.filter.analysis"),
+      category: t("portfolio.filter.business"), 
       description: t("portfolio.project3.desc"),
       duration: t("portfolio.project3.duration"),
       client: t("portfolio.project3.client"),
       results: t("portfolio.project3.results"),
-      tags: ["Financial Analysis", "Excel", "Reporting"],
-      image: "/placeholder-c6tpz.png",
+      tags: ["Business Management", "Digital Marketing", "Finance", "Startup"],
+      image: "/shopeeme.png",
     },
     {
       title: t("portfolio.project4.title"),
@@ -87,24 +91,23 @@ export function PortfolioSection() {
     },
     {
       title: t("portfolio.project6.title"),
-      category: t("portfolio.filter.document"),
+      category: t("portfolio.filter.database"),
       description: t("portfolio.project6.desc"),
       duration: t("portfolio.project6.duration"),
       client: t("portfolio.project6.client"),
       results: t("portfolio.project6.results"),
-      tags: ["Inventory", "Automation", "Excel"],
+      tags: ["Inventory", "Automation", "Excel", "Database"],
       image: "/warehouse-inventory-management-system-dashboard.jpg",
     },
   ]
 
+  // Kategori filter dibuat secara dinamis dari daftar proyek
   const categories = [
     t("portfolio.filter.all"),
-    t("portfolio.filter.database"),
-    t("portfolio.filter.document"),
-    t("portfolio.filter.analysis"),
-    t("portfolio.filter.research"),
+    ...Array.from(new Set(projects.map((p) => p.category))),
   ]
 
+  // Logika untuk memfilter proyek berdasarkan kategori aktif
   const filteredProjects =
     activeFilter === t("portfolio.filter.all")
       ? projects
@@ -196,14 +199,28 @@ export function PortfolioSection() {
                     ))}
                   </div>
 
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground group-hover:animate-pulse-glow bg-transparent"
-                  >
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    {t("portfolio.viewDetails")}
-                  </Button>
+                  { "link" in project && project.link ? (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer">
+                      <Button
+                        variant="outline"
+                        size="sm"
+                        className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground group-hover:animate-pulse-glow bg-transparent"
+                      >
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        {t("portfolio.viewDetails")}
+                      </Button>
+                    </a>
+                  ) : (
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground group-hover:animate-pulse-glow bg-transparent"
+                      disabled
+                    >
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      {t("portfolio.viewDetails")}
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}
@@ -213,15 +230,15 @@ export function PortfolioSection() {
           <div className={`mt-16 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`} style={{ animationDelay: "1s" }}>
             <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center">
               <div className="space-y-2">
-                <div className="text-4xl font-bold text-primary">1000+</div>
+                <div className="text-4xl font-bold text-primary">20+</div>
                 <div className="text-muted-foreground">{t("portfolio.stats.projects")}</div>
               </div>
               <div className="space-y-2">
-                <div className="text-4xl font-bold text-primary">50+</div>
+                <div className="text-4xl font-bold text-primary">10+</div>
                 <div className="text-muted-foreground">{t("portfolio.stats.clients")}</div>
               </div>
               <div className="space-y-2">
-                <div className="text-4xl font-bold text-primary">99.9%</div>
+                <div className="text-4xl font-bold text-primary">98.8%</div>
                 <div className="text-muted-foreground">{t("portfolio.stats.accuracy")}</div>
               </div>
               <div className="space-y-2">

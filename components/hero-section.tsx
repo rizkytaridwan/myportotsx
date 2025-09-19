@@ -94,15 +94,15 @@ export function HeroSection() {
             style={{ animationDelay: "1.5s" }}
           >
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">5+</div>
+              <div className="text-3xl font-bold text-primary mb-2">3+</div>
               <div className="text-muted-foreground">{t("hero.yearsExp")}</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">1000+</div>
+              <div className="text-3xl font-bold text-primary mb-2">20+</div>
               <div className="text-muted-foreground">{t("hero.projectsCompleted")}</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary mb-2">99.9%</div>
+              <div className="text-3xl font-bold text-primary mb-2">98.8%</div>
               <div className="text-muted-foreground">{t("hero.accuracyRate")}</div>
             </div>
           </div>
